@@ -114,3 +114,12 @@
     flex-direction: column;
   }
 }
+
+.glider {
+  width: 600px;
+}
+
+.slide {
+  text-align: center;
+  background-color: black;
+}

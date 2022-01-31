@@ -22,31 +22,29 @@ export default function Home() {
           hasDots
           slidesToShow={1}
           slidesToScroll={1}
+          className={styles.glider}
         >
-          <div>
-            <Image
-              src="https://source.unsplash.com/random/600x337?a=1"
-              alt=""
-              width={600}
-              height={337}
-            />
-          </div>
-          <div>
-            <Image
-              src="https://source.unsplash.com/random/600x337?a=2"
-              alt=""
-              width={600}
-              height={337}
-            />
-          </div>
-          <div>
-            <Image
-              src="https://source.unsplash.com/random/600x337?a=3"
-              alt=""
-              width={600}
-              height={337}
-            />
-          </div>
+          <Image
+            src="https://source.unsplash.com/random/600x337?a"
+            alt=""
+            width={600}
+            height={337}
+            className={styles.slide}
+          />
+          <Image
+            src="https://source.unsplash.com/random/600x337?b"
+            alt=""
+            width={600}
+            height={337}
+            className={styles.slide}
+          />
+          <Image
+            src="https://source.unsplash.com/random/600x337?c"
+            alt=""
+            width={600}
+            height={337}
+            className={styles.slide}
+          />
         </GliderComponent>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
