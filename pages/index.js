@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import GliderComponent from "react-glider";
 import styles from "../styles/Home.module.css";
 import "glider-js/glider.min.css";
+import dynamic from "next/dynamic";
+
+const GliderComponent = dynamic(() => import("react-glider"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
