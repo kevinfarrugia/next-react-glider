@@ -43,37 +43,38 @@ export default function Home() {
           />
         </Glider>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">React-Glider!</a>
+          Welcome to{" "}
+          <a href="https://react-glider.vercel.app/">react-glider!</a>
         </h1>
 
-        <p className={styles.description}>React 17.0.2</p>
+        <p className={styles.description}>Next 13 / React 18.2.0</p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://react-glider.vercel.app/" className={styles.card}>
             <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Find in-depth information about react-glider features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://github.com/kevinfarrugia/react-glider" className={styles.card}>
+            <h2>Contribute</h2>
+            <p>Contribute to react-glider on GitHub</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="https://codesandbox.io/examples/package/react-glider"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Discover examples on Code Sandbox</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.npmjs.com/package/react-glider"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Install &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Install using npm or yarn.
             </p>
           </a>
         </div>
