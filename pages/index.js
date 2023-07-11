@@ -4,6 +4,10 @@ import styles from "../styles/Home.module.css";
 import "glider-js/glider.min.css";
 import Glider from "react-glider";
 
+function GliderContainer({ children }) {
+  return <div className={styles.gliderContainer}>{children}</div>;
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,37 +16,45 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Glider draggable hasDots slidesToShow={1} className={styles.glider}>
-          <div className={styles.slide}>
-            <Image
-              src="https://source.unsplash.com/random/800x800?a"
-              alt=""
-              width={800}
-              height={800}
-              className={styles.image}
-              priority
-            />
-            <h3>Item 1</h3>
-          </div>
-          <div className={styles.slide}>
-            <Image
-              src="https://source.unsplash.com/random/800x800?b"
-              alt=""
-              width={800}
-              height={800}
-              className={styles.image}
-            />
-            <h3>Item 2</h3>
-          </div>
-          <div className={styles.slide}>
-            <Image
-              src="https://source.unsplash.com/random/800x800?c"
-              alt=""
-              width={800}
-              height={800}
-              className={styles.image}
-            />
-            <h3>Item 3</h3>
+        <Glider
+          draggable
+          hasDots
+          slidesToShow={1}
+          className={styles.glider}
+          skipTrack
+        >
+          <div className={styles.track}>
+            <div className={styles.slide}>
+              <Image
+                src="https://source.unsplash.com/random/800x800?a"
+                alt=""
+                width={800}
+                height={800}
+                className={styles.image}
+                priority
+              />
+              <h3>Item 1</h3>
+            </div>
+            <div className={styles.slide}>
+              <Image
+                src="https://source.unsplash.com/random/800x800?b"
+                alt=""
+                width={800}
+                height={800}
+                className={styles.image}
+              />
+              <h3>Item 2</h3>
+            </div>
+            <div className={styles.slide}>
+              <Image
+                src="https://source.unsplash.com/random/800x800?c"
+                alt=""
+                width={800}
+                height={800}
+                className={styles.image}
+              />
+              <h3>Item 3</h3>
+            </div>
           </div>
         </Glider>
         <h1 className={styles.title}>
