@@ -15,29 +15,32 @@ export default function Home() {
         <Glider draggable hasDots slidesToShow={1} className={styles.glider}>
           <div className={styles.slide}>
             <Image
-              src="https://source.unsplash.com/random/600x300?a"
+              src="https://source.unsplash.com/random/800x800?a"
               alt=""
-              width={600}
-              height={300}
+              width={800}
+              height={800}
+              className={styles.image}
               priority
             />
             <h3>Item 1</h3>
           </div>
           <div className={styles.slide}>
             <Image
-              src="https://source.unsplash.com/random/600x300?b"
+              src="https://source.unsplash.com/random/800x800?b"
               alt=""
-              width={600}
-              height={300}
+              width={800}
+              height={800}
+              className={styles.image}
             />
             <h3>Item 2</h3>
           </div>
           <div className={styles.slide}>
             <Image
-              src="https://source.unsplash.com/random/600x300?c"
+              src="https://source.unsplash.com/random/800x800?c"
               alt=""
-              width={600}
-              height={300}
+              width={800}
+              height={800}
+              className={styles.image}
             />
             <h3>Item 3</h3>
           </div>
@@ -48,30 +51,35 @@ export default function Home() {
         </h1>
         <p className={styles.description}>v4.0.2</p>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://react-glider.vercel.app/" className={styles.card}>
             <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>
+              Find in-depth information about react-glider features and API.
+            </p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="https://github.com/kevinfarrugia/react-glider"
+            className={styles.card}
+          >
+            <h2>Contribute</h2>
+            <p>Contribute to react-glider on GitHub</p>
+          </a>
+
+          <a
+            href="https://codesandbox.io/examples/package/react-glider"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Discover examples on Code Sandbox</p>
           </a>
+
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.npmjs.com/package/react-glider"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h2>Install &rarr;</h2>
+            <p>Install using npm or yarn.</p>
           </a>
         </div>
       </main>
