@@ -4,10 +4,6 @@ import styles from "../styles/Home.module.css";
 import "glider-js/glider.min.css";
 import Glider from "react-glider";
 
-function GliderContainer({ children }) {
-  return <div className={styles.gliderContainer}>{children}</div>;
-}
-
 export default function Home() {
   return (
     <div className={styles.container}>
